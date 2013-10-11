@@ -1,0 +1,21 @@
+{
+  "name": "fidelity-angularjs-training",
+  "version": "0.0.0",
+  "authors": [
+    "Julien Biezemans <jb@jbpros.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "angular": "1.2.0-rc.2"
+  }
+}
