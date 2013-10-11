@@ -17,7 +17,7 @@
       <div ng-app="app">
         <div ng-controller="AnimalsController">
           <ul class="list-group">
-            <li class="list-group-item" ng-repeat="animal in animals">{{ animal.name }}</li>
+            <li class="list-group-item" ng-repeat="animal in animals | orderBy:'-name'|limitTo:3">{{ animal.name }}</li>
           </ul>
         </div>
       </div>
