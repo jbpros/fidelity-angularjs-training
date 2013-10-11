@@ -17,7 +17,7 @@
       <div ng-app="app" ng-controller="AppController">
         <div><input ng-model="data.message"></div>
         <div class="{{ data.message }}">{{ data.message }}</div>
-        <button ng-click="greet()">Greet</button>
+        <button ng-click="greet(data.message)">Greet</button>
       </div>
     </div>
   </body>
