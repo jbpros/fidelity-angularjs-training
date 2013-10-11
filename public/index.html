@@ -23,7 +23,7 @@
 
         <div ng-controller="BController">
           <div><input ng-model="data.message"></div>
-          <div class="{{ data.message }}">{{ data.message }}</div>
+          <div class="{{ data.message }}">{{ data.message | quote }}</div>
           <button ng-click="greet(data.message)">Greet</button>
         </div>
       </div>

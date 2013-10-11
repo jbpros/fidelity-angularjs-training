@@ -26,4 +26,10 @@
     }
   });
 
+  app.filter("quote", function () {
+    return function (text) {
+      return '"' + (text || '') + '"';
+    };
+  });
+
 })(angular);
