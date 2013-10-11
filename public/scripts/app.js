@@ -2,13 +2,22 @@
 
   var app = angular.module("app", []);
 
-  app.controller("AppController", function ($scope, greet) {
-    $scope.data = { message: "Hi there!" };
+  app.controller("AController", function ($scope, greet, greeting) {
+    $scope.data = greeting;
+    $scope.greet = greet;
+  });
+
+  app.controller("BController", function ($scope, greet, greeting) {
+    $scope.data = greeting;
     $scope.greet = greet;
   });
 
   app.factory("defaultGreeting", function () {
     return "Bonjour à vous!";
+  });
+
+  app.factory("greeting", function (defaultGreeting) {
+    return {};
   });
 
   app.factory("greet", function (defaultGreeting) {

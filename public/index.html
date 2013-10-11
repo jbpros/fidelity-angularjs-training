@@ -14,10 +14,18 @@
     <div class="container">
       <h1>Angular.js training</h1>
 
-      <div ng-app="app" ng-controller="AppController">
-        <div><input ng-model="data.message"></div>
-        <div class="{{ data.message }}">{{ data.message }}</div>
-        <button ng-click="greet(data.message)">Greet</button>
+      <div ng-app="app">
+        <div ng-controller="AController">
+          <div><input ng-model="data.message"></div>
+          <div class="{{ data.message }}">{{ data.message }}</div>
+          <button ng-click="greet(data.message)">Greet</button>
+        </div>
+
+        <div ng-controller="BController">
+          <div><input ng-model="data.message"></div>
+          <div class="{{ data.message }}">{{ data.message }}</div>
+          <button ng-click="greet(data.message)">Greet</button>
+        </div>
       </div>
     </div>
   </body>
