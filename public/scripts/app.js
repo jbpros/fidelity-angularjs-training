@@ -5,6 +5,7 @@
   app.directive("mammal", function() {
     return {
       restrict: "E",
+      scope: {},
       template: "<div class='well'><input ng-model='mammal.name'><br>Hi, my name is {{ mammal.name }}!</div>",
       replace: true
     };
