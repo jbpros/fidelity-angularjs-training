@@ -2,16 +2,11 @@
 
   var app = angular.module("app", []);
 
-  app.controller("AnimalsController", function ($scope) {
-    $scope.animals = [
-      { name: "capybara" },
-      { name: "bear" },
-      { name: "snake" },
-      { name: "spider" },
-      { name: "jellyfish" },
-      { name: "rat" },
-      { name: "whale" }
-    ];
+  app.directive("mammal", function() {
+    return {
+      restrict: "E",
+      template: "<div class='well'>Here is a dolphin!</div>"
+    };
   });
 
 })(angular);
