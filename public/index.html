@@ -15,16 +15,10 @@
       <h1>Angular.js training</h1>
 
       <div ng-app="app">
-        <div ng-controller="AController">
-          <div><input ng-model="data.message"></div>
-          <div class="{{ data.message }}">{{ data.message }}</div>
-          <button ng-click="greet(data.message)">Greet</button>
-        </div>
-
-        <div ng-controller="BController">
-          <div><input ng-model="data.message"></div>
-          <div class="{{ data.message }}">{{ data.message | quote }}</div>
-          <button ng-click="greet(data.message)">Greet</button>
+        <div ng-controller="AnimalsController">
+          <ul class="list-group">
+            <li class="list-group-item" ng-repeat="animal in animals">{{ animal.name }}</li>
+          </ul>
         </div>
       </div>
     </div>
