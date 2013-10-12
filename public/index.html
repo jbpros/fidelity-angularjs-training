@@ -15,11 +15,11 @@
       <h1>Angular.js training</h1>
 
       <div ng-app="app">
-
-        <mammal></mammal>
-        <mammal></mammal>
-        <mammal></mammal>
-
+        <div ng-controller="MammalController">
+          <mammal scream="makeSomeNoise()"></mammal>
+          <mammal></mammal>
+          <mammal></mammal>
+        </div>
       </div>
     </div>
   </body>
