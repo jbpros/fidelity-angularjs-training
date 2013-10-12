@@ -12,7 +12,8 @@
       scope: {
         name: "="
       },
-      template: "<div>I'm a mammal and my name is {{ name }}</div>" +
+      transclude: true,
+      template: "<div>I'm a mammal and my name is {{ name }}.</div><div ng-transclude></div>" +
         "<div><input ng-model='name'></div>"
     };
   });
