@@ -2,6 +2,10 @@
 
   var app = angular.module("app", []);
 
+  app.factory("defaultMammalName", function () {
+    return "Garfield";
+  });
+
   app.controller("MammalController", function ($scope) {
     $scope.name = 'Lassie'
   });
