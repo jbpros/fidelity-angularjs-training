@@ -6,8 +6,8 @@
     return "Garfield";
   });
 
-  app.controller("MammalController", function ($scope) {
-    $scope.name = 'Lassie'
+  app.controller("MammalController", function ($scope, defaultMammalName) {
+    $scope.name = defaultMammalName;
   });
 
   app.directive("mammal", function() {
