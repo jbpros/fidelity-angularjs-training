@@ -2,12 +2,12 @@
 
   var app = angular.module("app", []);
 
-  app.factory("defaultMammalName", function () {
-    return "Garfield";
+  app.factory("getDefaultMammalName", function () {
+    return function () { return "Garfield" };
   });
 
-  app.controller("MammalController", function ($scope, defaultMammalName) {
-    $scope.name = defaultMammalName;
+  app.controller("MammalController", function ($scope, getDefaultMammalName) {
+    $scope.name = getDefaultMammalName();
   });
 
   app.directive("mammal", function() {
