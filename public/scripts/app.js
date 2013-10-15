@@ -18,7 +18,9 @@
       link: function (scope, element, attributes) {
         element.on("click", function () {
           console.log("changing name!");
-          scope.name = "Bob";
+          scope.$apply(function () {
+            scope.name = "Bob";
+          });
         });
       }
     };
