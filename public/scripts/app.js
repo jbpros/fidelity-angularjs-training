@@ -17,7 +17,9 @@
         "<div><input ng-model='name'></div>",
       link: function (scope, element, attributes) {
         setTimeout(function () {
-          scope.$apply('name = "Bob"');
+          scope.$apply(function () {
+            scope.name = "Bob";
+          });
         }, 1000);
       }
     };
