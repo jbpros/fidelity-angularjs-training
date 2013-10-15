@@ -16,9 +16,9 @@
       template: "<div>I'm a mammal and my name is {{ name }}.</div><div ng-transclude></div>" +
         "<div><input ng-model='name'></div>",
       link: function (scope, element, attributes) {
-        scope.$watch('name', function (newName) {
-          console.log("name changed to:", newName);
-        });
+        setTimeout(function () {
+          scope.name = "Bob";
+        }, 1000);
       }
     };
   });
